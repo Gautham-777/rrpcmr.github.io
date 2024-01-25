@@ -1,4 +1,9 @@
 /********** Template CSS **********/
+.WebContainer{
+    width:100%;
+    min-width:1000px;
+    height:auto;
+}
 :root {
     --primary: #FE5D37;
     --light: #FFF5F3;
