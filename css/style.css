@@ -4,6 +4,11 @@
     min-width:1000px;
     height:auto;
 }
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
 :root {
     --primary: #FE5D37;
     --light: #FFF5F3;
