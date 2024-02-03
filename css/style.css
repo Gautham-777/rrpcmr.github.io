@@ -1,14 +1,13 @@
 /********** Template CSS **********/
-.WebContainer{
-    width:100%;
-    min-width:1000px;
-    height:auto;
-}
-body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-}
+img {
+    
+    max-width: 100% ;
+    
+  }
+@media (min-width: 370px) {
+    main {
+      flex-wrap: nowrap;
+    }
 :root {
     --primary: #FE5D37;
     --light: #FFF5F3;
@@ -355,6 +354,7 @@ background-size: cover;
 /*** About ***/
 .about-img img {
     transition: .5s;
+    
 }
 
 .about-img img:hover {
@@ -373,12 +373,17 @@ background-size: cover;
 
 
 /*** Team ***/
-.team-item .team-text {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    bottom: 0;
-    right: 40%;
+.team-item  {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    transition: .5s;
+}
+.team-text {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
