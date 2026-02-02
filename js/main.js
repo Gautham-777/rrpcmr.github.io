@@ -19,9 +19,9 @@
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
+            $('.sticky-top').addClass('shadow-sm bg-grey').css('top', '0px');
         } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+            $('.sticky-top').removeClass('shadow-sm bg-grey').css('top', '-100px');
         }
     });
     
@@ -78,4 +78,37 @@
     });
     
 })(jQuery);
+
+// function toggleChat() {
+//     document.getElementById("chatbox").classList.toggle("hidden");
+//   }
+  
+//   function sendMessage() {
+//     const input = document.getElementById("user-input");
+//     const msg = input.value.trim();
+//     if (!msg) return;
+  
+//     displayMessage("You", msg);
+//     input.value = "";
+  
+//     setTimeout(() => {
+//       displayMessage("Bot", getBotResponse(msg));
+//     }, 600);
+//   }
+  
+//   function displayMessage(sender, text) {
+//     const msgBox = document.createElement("div");
+//     msgBox.innerHTML = `<strong>${sender}:</strong> ${text}`;
+//     document.getElementById("chat-messages").appendChild(msgBox);
+//     document.getElementById("chat-messages").scrollTop = document.getElementById("chat-messages").scrollHeight;
+//   }
+  
+//   function getBotResponse(input) {
+//     input = input.toLowerCase();
+//     if (input.includes("admission")) return "You can apply online or visit our school office for admission.";
+//     if (input.includes("fee") && input.includes("lkg")) return "The annual fee for LKG is ₹30,000.";
+//     if (input.includes("timing") || input.includes("school hours")) return "Our school runs from 8:30 AM to 3:00 PM.";
+//     return "I'm sorry, I didn’t understand that. Please ask about admissions, fees, or timings.";
+//   }
+
 
